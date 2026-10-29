@@ -1,4 +1,4 @@
-# Live Telegram Gifts Arbitrage Signals (Updated: 2026-10-29 23:45 UTC)
+# Live Telegram Gifts Arbitrage Signals (Updated: 2026-10-29 23:51 UTC)
 > Real-time under-floor snipes and cross-market price spreads on TON Blockchain & Fragment.
 **💎 VIP Instant Alerts & Private Bot Access:** Send `1.0 TON` to `UQCwrgVAYHvlJe87-eOAK01ZzMW42E17YnbCyWPPkKeLhEpP`
 **💵 USDT (TRC-20):** `TXCYzTR3Br4MuWXUnGRvpA3EaYC7iyydYj`
@@ -16,7 +16,7 @@
 | **blingbinky** | `0.0 TON` | `0.0 TON` | **+3.3%** | [Inspect on Fragment](https://fragment.com/gifts/blingbinky?filter=sale&sort=price_asc) |
 | **electricskull** | `0.0 TON` | `0.0 TON` | **+2.8%** | [Inspect on Fragment](https://fragment.com/gifts/electricskull?filter=sale&sort=price_asc) |
 | **diamondring** | `0.0 TON` | `0.0 TON` | **+2.7%** | [Inspect on Fragment](https://fragment.com/gifts/diamondring?filter=sale&sort=price_asc) |
-| **bondedring** | `0.0 TON` | `0.0 TON` | **+2.2%** | [Inspect on Fragment](https://fragment.com/gifts/bondedring?filter=sale&sort=price_asc) |
+| **astralshard** | `0.0 TON` | `0.0 TON` | **+1.4%** | [Inspect on Fragment](https://fragment.com/gifts/astralshard?filter=sale&sort=price_asc) |
 
 ---
 ### How to Claim Instant Private Bot License
