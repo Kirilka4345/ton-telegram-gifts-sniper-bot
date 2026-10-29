@@ -42,7 +42,7 @@ def fetch_live_telegram_gifts() -> list[dict]:
         # Extract gift collection names and counts from Fragment
         matches = re.findall(r'href="/gifts/([a-z0-9_-]+)"[^>]*>.*?tm-main-filters-name[^>]*>([^<]+)<', html, re.S)
         seen = set()
-        for slug, name in matches[:20]:
+        for slug, name in matches[:45]:
             if slug in seen:
                 continue
             seen.add(slug)
@@ -52,7 +52,7 @@ def fetch_live_telegram_gifts() -> list[dict]:
 
     # Enrich top gift collections with live on-chain listings / floor data
     enriched = []
-    for g in gifts[:12]:
+    for g in gifts[:35]:
         slug = g["slug"]
         try:
             req = urllib.request.Request(f"https://fragment.com/gifts/{slug}?filter=sale&sort=price_asc", headers=UA)
