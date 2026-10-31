@@ -6,9 +6,13 @@
 [![Download Zip](https://img.shields.io/badge/Download_v1.0.0-ZIP-blue?style=for-the-badge&logo=zip)](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/releases/download/v1.0.0/TON-Telegram-Gifts-Sniper-Bot-v1.0.zip)
 [![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
 [![Tests: Passing](https://img.shields.io/badge/Tests-3%2F3%20Passing-success?style=for-the-badge&logo=python)](tests/test_gifts_sniper.py)
+[![Buy on Gumroad](https://img.shields.io/badge/Buy_on_Gumroad-$49-ff90e8?style=for-the-badge&logo=gumroad)](https://kirillopen.gumroad.com/l/zkigy)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
 ---
+
+
+> 🛍️ **Instant Download & Commercial License:** [Buy TON Telegram Gifts Sniper Bot on Gumroad ($49)](https://kirillopen.gumroad.com/l/zkigy)
 
 ## 🚀 Overview
 
