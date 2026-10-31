@@ -1,0 +1,6 @@
+__pycache__/
+*.py[cod]
+.env
+*.zip
+TON_GIFTS_SNIPER.html
+data/
