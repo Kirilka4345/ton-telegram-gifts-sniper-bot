@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ton-telegram-gifts-sniper"
+version = "1.1.0"
+authors = [
+  { name="Kirill", email="kirillopen4345@gmail.com" },
+]
+description = "High-speed On-Chain Sniper and Arbitrage Radar for TON Telegram Gifts"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot"
+"Commercial License" = "https://kirillopen.gumroad.com/l/zkigy"
+"Funding" = "https://kirillopen.gumroad.com"
