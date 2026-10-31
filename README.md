@@ -1,76 +1,50 @@
-# 💎 ton-telegram-gifts-sniper-bot
+# Fragment Gift Price Observer — Python Prototype
 
-> **Real-Time Floor Price Tracker, Spread Scanner & Under-Floor Radar for Telegram Collectible Gifts and TON NFT Markets.**
+An experimental HTML scraper and local report generator for Fragment gift listings.
 
-[![Latest Release](https://img.shields.io/github/v/release/Kirilka4345/ton-telegram-gifts-sniper-bot?style=for-the-badge&logo=github&color=success)](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/releases/latest)
-[![Download Zip](https://img.shields.io/badge/Download_v1.0.0-ZIP-blue?style=for-the-badge&logo=zip)](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/releases/download/v1.0.0/TON-Telegram-Gifts-Sniper-Bot-v1.0.zip)
-[![Python Version](https://img.shields.io/badge/Python-3.10%2B-blue?style=for-the-badge&logo=python)](https://python.org)
-[![Tests: Passing](https://img.shields.io/badge/Tests-3%2F3%20Passing-success?style=for-the-badge&logo=python)](tests/test_gifts_sniper.py)
-[![Buy on Gumroad](https://img.shields.io/badge/Buy_on_Gumroad-$49-ff90e8?style=for-the-badge&logo=gumroad)](https://kirillopen.gumroad.com/l/zkigy)
-[![License: MIT](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+**Status: development starter / prototype.** Read the scope before integrating.
 
----
+## Included
 
+- Attempts to parse gift collection pages and compare the first two observed prices.
+- Writes a local JSON report and escaped HTML dashboard.
+- Running the script does not trade, sign transactions or publish repositories.
 
-> 🛍️ **Instant Download & Commercial License:** [Buy TON Telegram Gifts Sniper Bot on Gumroad ($49)](https://kirillopen.gumroad.com/l/zkigy)
+## Scope and limitations
 
-## 🚀 Overview
+- Live parsing depends on upstream HTML and has not been validated as a reliable data feed.
+- No Getgems/Portals API integration, wallet execution, notifications or profitable arbitrage guarantee.
+- A missing observation is not a zero market price; inspect fetch warnings.
+- config.example.json is illustrative; thresholds are currently in the source.
 
-**ton-telegram-gifts-sniper-bot** is a specialized real-time monitoring and arbitrage scanner for the rapidly expanding Telegram Gifts and TON digital collectibles ecosystem (Portals Market, Fragment, Getgems). It continuously calculates floor-to-next price spreads, identifies mispriced listings, and flags profitable arbitrage opportunities.
+## Quick start
 
-### ⚡ Key Capabilities
-- **Real-Time Floor Tracking:** Monitors live floor prices and immediate price gaps across all major gift collections.
-- **Instant Arbitrage Spread Detection:** Flags items listed below fair market value with automated margin calculation.
-- **Interactive Dashboard:** Generates an HTML terminal view (`TON_GIFTS_SNIPER.html`) for at-a-glance market analytics.
-- **Lightweight Zero-Key Architecture:** Operates with public RPC endpoints and market feeds without requiring paid API keys.
-- **Instant Notification Hooks:** Ready to broadcast buy signals to Telegram channels, private chats, or webhooks.
+Python 3.10+; run from the repository directory.
 
----
-
-## ⚡ Quickstart
-
-### 1. Installation
-Clone the repository or [download the release archive](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/releases/download/v1.0.0/TON-Telegram-Gifts-Sniper-Bot-v1.0.zip):
-
-```bash
-git clone https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot.git
-cd ton-telegram-gifts-sniper-bot
-pip install -r requirements.txt
-```
-
-### 2. Configuration
-Review `config.example.json` to customize your scan thresholds, notification webhooks, and target collections:
-
-```json
-{
-  "min_spread_ton": 1.0,
-  "poll_interval_seconds": 30,
-  "wallets": {
-    "TON": "UQCwrgVAYHvlJe87-eOAK01ZzMW42E17YnbCyWPPkKeLhEpP",
-    "USDT_TRC20": "TXCYzTR3Br4MuWXUnGRvpA3EaYC7iyydYj"
-  }
-}
-```
-
-### 3. Run
-```bash
+```sh
 python ton_gifts_sniper.py
-# or double-click START.bat on Windows
 ```
 
----
+## Validation
 
-## 💼 Pro Trading Bots & Custom On-Chain Automation
+```sh
+python -m unittest discover -s tests -v
+```
 
-Looking for high-frequency on-chain sniping, automated Tonkeeper/TonConnect wallet execution (v5r1 / v4r2), or bespoke Telegram Mini App integration?
+Offline tests cover report generation and HTML safety. Live marketplace access is not covered.
 
-I build custom Web3 & crypto bots:
-- **TON Ecosystem:** Jetton sniping, DEX liquidity pool monitors (DeDust / STON.fi), Fragment phone number & username bidders.
-- **Security & Reliability:** Non-custodial architectures, rate-limit resilience, multi-node RPC failover.
+## Repository map
 
-### 📩 Contact & Inquiries
-- **GitHub:** [@Kirilka4345](https://github.com/Kirilka4345)
-- **Direct Crypto Licensing ($15 – $49):**
-  - **TON:** `UQCwrgVAYHvlJe87-eOAK01ZzMW42E17YnbCyWPPkKeLhEpP`
-  - **USDT (TRC-20):** `TXCYzTR3Br4MuWXUnGRvpA3EaYC7iyydYj`
-  - **EVM (Base / ETH):** `0x12f0a957bd351492252aac81198edba4c5a56790`
+- `ton_gifts_sniper.py` — implementation.
+- `tests/` — current checks and regression tests.
+- [CHANGELOG.md](CHANGELOG.md) — changes and verification limits.
+- [CONTRIBUTING.md](CONTRIBUTING.md) — issue and change guidelines.
+
+## Downloads and usage terms
+
+[Repository releases](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/releases) contain historical snapshots; use the current source for the documented fixes.
+No LICENSE file is present. Earlier MIT badges and commercial-license claims did not establish usable license terms. License terms require clarification before redistribution.
+
+## Questions
+
+For reproducible technical issues, use [GitHub Issues](https://github.com/Kirilka4345/ton-telegram-gifts-sniper-bot/issues). Include the commit, runtime version, expected result and minimal reproduction. Never include tokens, cookies or customer data.
